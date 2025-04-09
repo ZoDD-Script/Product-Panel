@@ -18,10 +18,10 @@ export const createProduct = async (req, res) => {
     !product.name ||
     !product.description ||
     !product.price ||
-    !product.image ||
-    !product.category ||
-    !product.countInStock ||
-    !product.rating
+    !product.image
+    // !product.category ||
+    // !product.countInStock ||
+    // !product.rating
   ) {
     return res
       .status(400)
